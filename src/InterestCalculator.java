@@ -22,31 +22,19 @@ public class InterestCalculator {
             // get input total
             System.out.println("Enter Loan amount: ");
             String userInput = scanner.nextLine();
-            BigDecimal principal = new BigDecimal(userInput);
-            // validate principal is greater then zero
-                if(principal.compareTo(BigDecimal.ZERO) <= 0) {
-                    System.out.println("Invalid input, Exiting Program");
-                    System.exit(0);
-                } else {
-                    break;
-                }
+            BigDecimal principal = BigDecimal.valueOf(Double.valueOf(userInput));
+
+
                 // get interest rate input
                 System.out.println("Enter Interest Rate");
                 userInput = scanner.nextLine();
                 // set big decimal class to interest
-                BigDecimal interestRate = new BigDecimal(userInput);
-                if(interestRate.compareTo(BigDecimal.ZERO)  <= 0) {
-                    System.out.println("Invalid input, Exiting program");
-                    System.exit(0);
-                } else {
-                    break;
-                }
+                BigDecimal interestRate = BigDecimal.valueOf(Double.valueOf(userInput));
                 BigDecimal interest = principal.multiply(interestRate);
                 System.out.println("Loan Amount:" + dollar.format(principal));
                 System.out.println("Interest Rate:" + percent.format(interestRate));
-
-
-
+                System.out.println("Interest:" + dollar.format(interest));
+                System.out.println("Continue? (y/n) ");
 
 
             }

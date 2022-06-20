@@ -60,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655712889599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="u will need to get 2 inputs (both floating-point numbers). These need to be saved using the BigDecimal class so that all calculations are accurate.&#10;&#10;Loan amount&#10;Interest rate (in floating-point NOT percentage base - so not 7% the input would be .07)&#10;You will then calculate the interest using the BigDecimal methods. (The simple way, not the full loan repayment way).&#10;&#10;interest = loan amount X interest rate&#10;Lastly you will display everything out using the NumberFormat with currency and percentages as needed.">
+      <created>1655714185011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655714185011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

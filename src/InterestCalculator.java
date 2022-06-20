@@ -28,9 +28,25 @@ public class InterestCalculator {
                     System.out.println("Invalid input, Exiting Program");
                     System.exit(0);
                 } else {
-                    continue;
+                    break;
                 }
-                System.out.println("")
+                // get interest rate input
+                System.out.println("Enter Interest Rate");
+                userInput = scanner.nextLine();
+                // set big decimal class to interest
+                BigDecimal interestRate = new BigDecimal(userInput);
+                if(interestRate.compareTo(BigDecimal.ZERO)  <= 0) {
+                    System.out.println("Invalid input, Exiting program");
+                    System.exit(0);
+                } else {
+                    break;
+                }
+                BigDecimal interest = principal.multiply(interestRate);
+                System.out.println("Loan Amount:" + dollar.format(principal));
+                System.out.println("Interest Rate:" + percent.format(interestRate));
+
+
+
 
 
             }
@@ -43,4 +59,4 @@ public class InterestCalculator {
 
         }
     }
-}
+
